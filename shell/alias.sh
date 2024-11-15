@@ -1,0 +1,6 @@
+alias gs="git status"
+alias wtf="tldr"
+alias wth="man"
+alias editzsh="vim ~/.zshrc"
+alias reload=". ~/.zshrc"
+alias vimhelp="cat ~/vimmovs.txt"

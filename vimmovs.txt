@@ -1,0 +1,48 @@
+
+0 = ir a principio de linea
+
+$ = ir a final de linea
+
+num & mov = moverse cierta cantidad de veces (ej 2w = 2 palabras adelante)
+
+dd = borrar linea (y guarda en memoria)
+
+p = paste (pega lo guardado en memoria)
+
+u = deshacer
+
+U = resetear linea a estado original
+
+ctrl + R = rehacer cambios deshechos
+
+r = reemplazar letra
+
+G = fin de archivo
+
+gg = principio archivo
+
+[num]G = ir a linea *num*
+
+/ = buscar    -  n = next pattern ; N = previous pattern
+
+Ctrl + o = volver a ubicacion antes de buscar
+
+% = encuentra el ([{ que matchea con el buscado
+
+:s/old/new/g = sustituye old por new en la linea
+
+:%s/old/new/g = sustituye en todo el archivo
+
+:1,2s/old/new/g = sustituye en el rango (1,2)
+
+o = nueva linea abajo del cursor + insert mode
+
+O = nueva linea arriba del cursor + insert mode
+
+v = modo visual
+
+y = copiar texto resaltado
+
+yy = copia la linea entera
+
+
