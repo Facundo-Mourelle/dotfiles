@@ -1,21 +1,39 @@
 # mou-dotfiles
-## Setup rapido y backup para instalaciones de configuración rápida
 
-Para instalar mis configuraciones:
+## Requirements
 
-1. `git clone https://github.com/FacuMou/mou-dotfiles.git dotfiles`
-2. `cd dotfiles`
-3. `./install.sh`
+Asegurarse de tener instalado las siguientes aplicaciones:
 
-> [!CAUTION]
-> Sobreescribe configuraciones actuales.
-> Hacer copia de seguridad de dotfiles para evitar pérdidas
+### Git
 
+```
+pacman -S git
+```
+
+### Stow
+
+```
+pacman -S stow
+```
+
+## Installation
+
+Primero, clonar el repo en carpeta $HOME
+```
+$ git clone git@github.com/dreamsofautonomy/dotfiles.git
+$ cd dotfiles
+```
+
+Luego, usar stow para crear un link simbolico a los archivos
+
+```
+$ stow .
+```
 Lista de contenido:
 - zshrc
 - vimrc
-- alacritty
 - gitconfig
 - alias
 - fzf.zsh
-- vim-cheat-sheet
+- alacritty
+- vim cheat-sheet
