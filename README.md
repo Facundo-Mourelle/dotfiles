@@ -42,3 +42,5 @@ Lista de contenido:
 7. vim cheat-sheet
 8. bat
 9. starship
+10. eza
+11. tldr
