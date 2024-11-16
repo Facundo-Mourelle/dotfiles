@@ -1,11 +1,17 @@
+ESTRUCTURA BASICA DE VIM-MOTIONS:
+-------------------------------
+  COMMAND + COUNT + MOTION
+-------------------------------
 
 0 = ir a principio de linea
 
 $ = ir a final de linea
 
-num & mov = moverse cierta cantidad de veces (ej 2w = 2 palabras adelante)
-
 dd = borrar linea (y guarda en memoria)
+
+y = yank (corta lo resaltado)
+
+yy = yank toda una linea
 
 p = paste (pega lo guardado en memoria)
 
@@ -40,9 +46,4 @@ o = nueva linea abajo del cursor + insert mode
 O = nueva linea arriba del cursor + insert mode
 
 v = modo visual
-
-y = copiar texto resaltado
-
-yy = copia la linea entera
-
 
