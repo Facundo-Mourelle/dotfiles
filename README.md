@@ -30,10 +30,15 @@ Luego, usar stow para crear un link simbolico a los archivos
 $ stow .
 ```
 Lista de contenido:
-- zshrc
-- vimrc
-- gitconfig
-- alias
-- fzf.zsh
-- alacritty
-- vim cheat-sheet
+1. zshrc:
+     - mayor history
+     - historial compartido a traves de sesiones
+     - manejo de comandos duplicados en historial
+2. vimrc
+3. gitconfig
+4. alias
+5. fzf.zsh
+6. alacritty
+7. vim cheat-sheet
+8. bat
+9. starship
