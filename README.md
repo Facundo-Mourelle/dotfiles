@@ -31,7 +31,7 @@ $ stow .
 ```
 Lista de contenido:
 1. zshrc:
-     - mayor history
+     - Importante: Instalar zoxide y starship
      - historial compartido a traves de sesiones
      - manejo de comandos duplicados en historial
 2. vimrc
