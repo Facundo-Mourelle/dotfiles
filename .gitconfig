@@ -4,3 +4,4 @@
 	username = FacuMou
 [core]
 	editor = vim
+	autocrlf = input

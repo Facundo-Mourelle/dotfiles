@@ -94,6 +94,7 @@ source <(fzf --zsh)
 # Preferred editor for local and remote sessions
 
 export EDITOR='vim'
+export JAVA_HOME=/usr/lib/jvm/java-23-openjdk
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -101,7 +102,6 @@ export EDITOR='vim'
 
 # Set extras
 source /$HOME/shell/alias.sh
-
 # Start with utilities
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
