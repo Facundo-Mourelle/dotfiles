@@ -3,6 +3,12 @@ ESTRUCTURA BASICA DE VIM-MOTIONS:
   COMMAND + COUNT + MOTION
 -------------------------------
 
+<C-#KEY#> es Ctrl + Key
+
+<C-]> lleva a contenido de la palabra linkeada
+
+<C-t> vuelve a la ubicacion anterior (util con ^)
+
 0 = ir a principio de linea
 
 $ = ir a final de linea

@@ -1,6 +1,21 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# Define an array to ensure uniqueness
+typeset -U path
+
+# Add necessary directories
+path=(
+  $HOME/bin
+  $HOME/.local/bin
+  /usr/local/bin
+  /usr/local/sbin
+  /usr/bin
+  $HOME/.fzf/bin
+  $HOME/.ghcup/bin
+)
+
+# Export the cleaned path
+export PATH="${(j.:.)path}"
 # Path to your Oh My Zsh installation.
 export ZSH=/home/facumou/.oh-my-zsh
 
@@ -93,8 +108,7 @@ source <(fzf --zsh)
 
 # Preferred editor for local and remote sessions
 
-export EDITOR='vim'
-export JAVA_HOME=/usr/lib/jvm/java-23-openjdk
+export EDITOR='nvim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -105,6 +119,9 @@ source /$HOME/shell/alias.sh
 # Start with utilities
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+alias vim='nvim'
+
 
 # Set FZF source
 [ -f ~/shell/.fzf.zsh ] && source ~/shell/.fzf.zsh
