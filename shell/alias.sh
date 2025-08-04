@@ -1,12 +1,22 @@
 alias gs="git status"
 alias wtf="tldr"
-alias wth="man"
 alias editzsh="vim ~/.zshrc"
 alias reload=". ~/.zshrc"
 alias vimhelp="cat ~/vimmovs.txt"
 alias cat="bat"
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --tree --level=1"
 alias vim="nvim"
+alias nivm="nvim"
+alias nim="nvim"
+alias nimv="nvim"
 alias venvon="source venv/bin/activate"
 alias venvoff="deactivate"
-alias nt="alacritty --working-directory "$(pwd)" & disown"
+alias nt='alacritty --working-directory "$(pwd)" & disown'
+alias cp="/usr/local/bin/cpg -g"
+alias mv="/usr/local/bin/mvg -g"
+
+mvn17() {
+  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+  export PATH="$JAVA_HOME/bin:$PATH"
+  mvn "$@"
+}

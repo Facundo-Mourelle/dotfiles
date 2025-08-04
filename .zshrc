@@ -12,6 +12,7 @@ path=(
   /usr/bin
   $HOME/.fzf/bin
   $HOME/.ghcup/bin
+  $JAVA_HOME/bin:$PATH # is this ok?
 )
 
 # Export the cleaned path
@@ -115,7 +116,7 @@ export EDITOR='nvim'
 
 
 # Set extras
-source /$HOME/shell/alias.sh
+source $HOME/dotfiles/shell/alias.sh
 # Start with utilities
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
@@ -125,3 +126,9 @@ alias vim='nvim'
 
 # Set FZF source
 [ -f ~/shell/.fzf.zsh ] && source ~/shell/.fzf.zsh
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/facumou/.dart-cli-completion/zsh-config.zsh ]] && . /home/facumou/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
