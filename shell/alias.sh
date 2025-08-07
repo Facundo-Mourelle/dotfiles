@@ -9,14 +9,9 @@ alias vim="nvim"
 alias nivm="nvim"
 alias nim="nvim"
 alias nimv="nvim"
-alias venvon="source venv/bin/activate"
+alias venvon="source .venv/bin/activate"
 alias venvoff="deactivate"
 alias nt='alacritty --working-directory "$(pwd)" & disown'
-alias cp="/usr/local/bin/cpg -g"
-alias mv="/usr/local/bin/mvg -g"
-
-mvn17() {
-  export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-  export PATH="$JAVA_HOME/bin:$PATH"
-  mvn "$@"
-}
+#alias cp="/usr/local/bin/cpg -g"
+#alias mv="/usr/local/bin/mvg -g"
+alias lg='lazygit'

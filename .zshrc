@@ -10,9 +10,6 @@ path=(
   /usr/local/bin
   /usr/local/sbin
   /usr/bin
-  $HOME/.fzf/bin
-  $HOME/.ghcup/bin
-  $JAVA_HOME/bin:$PATH # is this ok?
 )
 
 # Export the cleaned path
@@ -25,12 +22,6 @@ export ZSH=/home/facumou/.oh-my-zsh
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,7 +85,7 @@ zstyle ':completion:*' menu no
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 #
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages fzf zsh-autosuggestions )
+plugins=(git colorize eza fzf zoxide aliases)
 
 source $ZSH/oh-my-zsh.sh
 # Set up fzf key bindings and fuzzy completion
